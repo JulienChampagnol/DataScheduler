@@ -5,10 +5,7 @@ export const useDataStore = defineStore('data', {
   },
   actions: {
     add_new_schedule (schedule) {
-
-    },
-    increment () {
-      this.count++
-    },
+      this.schedules.push(schedule)
+    }
   },
 })
